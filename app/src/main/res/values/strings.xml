@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Path Find Game</string>
+    <string name="start_button">Start</string>
+    <string name="up_button">up</string>
+    <string name="down_button">down</string>
+    <string name="left_button">left</string>
+    <string name="right_button">right</string>
+    <string name="finish_button">finish</string>
+    <string name="win_text">You have won!</string>
+</resources>

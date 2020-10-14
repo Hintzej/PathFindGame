@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.pathfindgame.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_hallFragment"
+            app:destination="@id/hallFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hallFragment"
+        android:name="com.example.pathfindgame.ui.main.HallFragment"
+        android:label="fragment_hall"
+        tools:layout="@layout/fragment_hall" >
+        <action
+            android:id="@+id/action_hallFragment_to_winScreenFragment"
+            app:destination="@id/winScreenFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/winScreenFragment"
+        android:name="com.example.pathfindgame.ui.main.WinScreenFragment"
+        android:label="win_screen_fragment"
+        tools:layout="@layout/win_screen_fragment" />
+</navigation>
